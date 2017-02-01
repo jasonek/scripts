@@ -26,4 +26,5 @@ function sortObjByValues(objj) {
     return orderedString.substring(0, orderedString.indexOf('_'));
 }
 
+
 console.log(sortObjByValues(countedObj));
