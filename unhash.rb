@@ -10,8 +10,6 @@ def hash(s)
      h
 end
 
-# puts hash("leepadg")
-
 def unhash(hashdigest)
     limit = "acdegilmnoprstuw".length
     answer_array = []
@@ -32,8 +30,6 @@ def unhash(hashdigest)
     answer_array
 end
 
-# puts unhash(680131659347)
-
 def convertToLetters(myarray,letters_key)
     answer_string = ''
     myarray.each do |x|
@@ -42,4 +38,8 @@ def convertToLetters(myarray,letters_key)
     answer_string
 end
 
+
+# Check work with examples:
+# puts unhash(680131659347)
+# puts hash("leepadg")
 puts convertToLetters(unhash(945924806726376), "acdegilmnoprstuw")
